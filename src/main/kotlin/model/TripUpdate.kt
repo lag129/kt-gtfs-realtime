@@ -83,6 +83,7 @@ data class TripUpdate(
         val dropOffType: DropOffPickupType? = null,
     )
 
+    @Suppress("unused")
     @Serializable
     enum class ScheduleRelationship {
         SCHEDULED,
@@ -91,6 +92,7 @@ data class TripUpdate(
         UNSCHEDULED
     }
 
+    @Suppress("unused")
     @Serializable
     enum class DropOffPickupType {
         REGULAR,

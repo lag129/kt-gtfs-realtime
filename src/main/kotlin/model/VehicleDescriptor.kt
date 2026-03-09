@@ -20,6 +20,7 @@ data class VehicleDescriptor(
     @ProtoNumber(4)
     val wheelchairAccessible: WheelchairAccessible = WheelchairAccessible.NO_VALUE
 ) {
+    @Suppress("unused")
     @Serializable
     enum class WheelchairAccessible {
         NO_VALUE,

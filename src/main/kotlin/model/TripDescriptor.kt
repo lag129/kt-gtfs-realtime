@@ -29,6 +29,7 @@ data class TripDescriptor(
     @ProtoNumber(7)
     val modifiedTrip: ModifiedTripSelector? = null,
 ) {
+    @Suppress("unused")
     @Serializable
     enum class ScheduleRelationship {
         SCHEDULED,

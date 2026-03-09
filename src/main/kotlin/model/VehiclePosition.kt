@@ -41,6 +41,7 @@ data class VehiclePosition(
     @ProtoNumber(11)
     val multiCarriageDetails: List<CarriageDetails>? = emptyList(),
 ) {
+    @Suppress("unused")
     @Serializable
     enum class VehicleStopStatus {
         INCOMING_AT,
@@ -48,6 +49,7 @@ data class VehiclePosition(
         IN_TRANSIT_TO
     }
 
+    @Suppress("unused")
     @Serializable
     enum class CongestionLevel {
         UNKNOWN_CONGESTION_LEVEL,
@@ -57,6 +59,7 @@ data class VehiclePosition(
         SEVERE_CONGESTION
     }
 
+    @Suppress("unused")
     @Serializable
     enum class OccupancyStatus {
         EMPTY,

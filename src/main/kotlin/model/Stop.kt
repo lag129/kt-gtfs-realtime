@@ -50,6 +50,7 @@ data class Stop(
     @ProtoNumber(15)
     val platformCode: TranslatedString? = null,
 ) {
+    @Suppress("unused")
     @Serializable
     enum class WheelchairBoarding {
         UNKNOWN,

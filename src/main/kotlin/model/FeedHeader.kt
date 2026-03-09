@@ -20,6 +20,7 @@ data class FeedHeader(
     @ProtoNumber(4)
     val feedVersion: String? = null,
 ) {
+    @Suppress("unused")
     @Serializable
     enum class Incrementality {
         FULL_DATASET,

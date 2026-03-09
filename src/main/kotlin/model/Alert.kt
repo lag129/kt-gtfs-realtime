@@ -49,48 +49,25 @@ data class Alert(
 
     @ProtoNumber(18)
     val effectDetail: TranslatedString? = null,
-
-    ) {
+) {
+    @Suppress("unused")
     @Serializable
     enum class Cause {
-
-        @ProtoNumber(1)
         UNKNOWN_CAUSE,
-
-        @ProtoNumber(2)
         OTHER_CAUSE,
-
-        @ProtoNumber(3)
         TECHNICAL_PROBLEM,
-
-        @ProtoNumber(4)
         STRIKE,
-
-        @ProtoNumber(5)
         DEMONSTRATION,
-
-        @ProtoNumber(6)
         ACCIDENT,
-
-        @ProtoNumber(7)
         HOLIDAY,
-
-        @ProtoNumber(8)
         WEATHER,
-
-        @ProtoNumber(9)
         MAINTENANCE,
-
-        @ProtoNumber(10)
         CONSTRUCTION,
-
-        @ProtoNumber(11)
         POLICE_ACTIVITY,
-
-        @ProtoNumber(12)
         MEDICAL_EMERGENCY
     }
 
+    @Suppress("unused")
     @Serializable
     enum class Effect {
         NO_SERVICE,
@@ -106,6 +83,7 @@ data class Alert(
         ACCESSIBILITY_ISSUE
     }
 
+    @Suppress("unused")
     @Serializable
     enum class SeverityLevel {
         UNKNOWN_SEVERITY,
