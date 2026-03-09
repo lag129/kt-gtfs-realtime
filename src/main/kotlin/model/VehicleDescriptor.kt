@@ -22,17 +22,9 @@ data class VehicleDescriptor(
 ) {
     @Serializable
     enum class WheelchairAccessible {
-
-        @ProtoNumber(0)
         NO_VALUE,
-
-        @ProtoNumber(1)
         UNKNOWN,
-
-        @ProtoNumber(2)
         WHEELCHAIR_ACCESSIBLE,
-
-        @ProtoNumber(3)
         WHEELCHAIR_INACCESSIBLE
     }
 
