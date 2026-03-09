@@ -93,53 +93,24 @@ data class Alert(
 
     @Serializable
     enum class Effect {
-        @ProtoNumber(1)
         NO_SERVICE,
-
-        @ProtoNumber(2)
         REDUCED_SERVICE,
-
-        @ProtoNumber(3)
         SIGNIFICANT_DELAYS,
-
-        @ProtoNumber(4)
         DETOUR,
-
-        @ProtoNumber(5)
         ADDITIONAL_SERVICE,
-
-        @ProtoNumber(6)
         MODIFIED_SERVICE,
-
-        @ProtoNumber(7)
         OTHER_EFFECT,
-
-        @ProtoNumber(8)
         UNKNOWN_EFFECT,
-
-        @ProtoNumber(9)
         STOP_MOVED,
-
-        @ProtoNumber(10)
         NO_EFFECT,
-
-        @ProtoNumber(11)
         ACCESSIBILITY_ISSUE
     }
 
     @Serializable
     enum class SeverityLevel {
-
-        @ProtoNumber(1)
         UNKNOWN_SEVERITY,
-
-        @ProtoNumber(2)
         INFO,
-
-        @ProtoNumber(3)
         WARNING,
-
-        @ProtoNumber(4)
         SEVERE
     }
 }

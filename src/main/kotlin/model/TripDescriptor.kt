@@ -31,31 +31,14 @@ data class TripDescriptor(
 ) {
     @Serializable
     enum class ScheduleRelationship {
-
-        @ProtoNumber(0)
         SCHEDULED,
-
-        @ProtoNumber(1)
         ADDED,
-
-        @ProtoNumber(2)
         UNSCHEDULED,
-
-        @ProtoNumber(3)
         CANCELED,
-
-        @ProtoNumber(5)
         REPLACEMENT,
-
-        @ProtoNumber(6)
         DUPLICATED,
-
-        @ProtoNumber(7)
         DELETED,
-
-        @ProtoNumber(8)
         NEW
-
     }
 
     @Serializable
